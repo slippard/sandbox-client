@@ -4,6 +4,10 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "outDir": "dist",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "baseUrl": ".",
     "paths": {
       "*": ["node_modules/*"]

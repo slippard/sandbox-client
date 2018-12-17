@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .admin {
   --spacing: 1rem;
   display: flex;
@@ -124,9 +125,18 @@ img {
 .toolbar {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 0 var(--spacing);
+}
+
+.logout {
+  text-transform: uppercase;
+  border: none;
+  background: rgb(255, 80, 80);
+  padding: .5em;
+  color: rgb(39, 39, 39);
+  border-radius: 4px;
 }
 
 .menu {
@@ -187,6 +197,41 @@ img {
 
 /* Now Playing */
 
+.shutdown {
+  background-color: #D55762;
+  border-radius: 5px;
+  height: 32px;
+  color: #fff;
+}
+
+.restart {
+  border-radius: 5px;
+  margin-left: 20px;
+  background: rgb(255, 170, 59);
+  color: #333;
+  border: solid 1px rgb(179, 179, 179);
+}
+
+.login {
+  border-radius: 5px;
+  margin-left: 20px;
+  background: #F4F7FA;
+  color: #333;
+  border: solid 1px #666;
+}
+
+#token {
+  width: 300px;
+  padding: .5em;
+  margin-left: 20px;
+}
+
+#toggle-token {
+  line-height: 20px;
+  color: red;
+  margin: 0px auto;
+}
+
 #np {
   line-height: 24px;
   padding: 0.5em;
@@ -196,7 +241,7 @@ img {
   transition: ease-in-out .3s all;
 }
 
-#np:active {
+#np:focus {
   line-height: 32px;
 }
 
@@ -206,7 +251,7 @@ img {
 }
 
 #setnp {
-  padding: .5em;
+  padding: 1em 1em;
   border: #505050;
   background: rgb(94, 192, 136);
   color: #F4F7FA;

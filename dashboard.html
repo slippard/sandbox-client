@@ -14,13 +14,14 @@
     <div class="admin">
         <header class="admin__header">
           <a href="#" class="logo">
-            <h1>Loading...</h1>
+            <h1 class="botName">Loading...</h1>
           </a>
           <div class="toolbar">
-            <button class="btn btn--primary">Connection Status</button>
-            <a href="#" class="logout">
-              Log Out
-            </a>
+            <button class="btn btn--primary shutdown">Shutdown</button>
+            <button class="btn btn--primary restart">Restart</button>
+            <button class="btn btn--primary login">Login</button>
+            <input type="password" name="token" id="token" placeholder="Bot Token">
+            <input type="checkbox" id="toggle-token">Show/hide
           </div>
         </header>
         <nav class="admin__nav">
