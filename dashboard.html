@@ -26,7 +26,7 @@
         <nav class="admin__nav">
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">Dashboard</a>
+              <a class="menu__link menu__link--active" href="#">Dashboard</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Guilds</a>
@@ -45,14 +45,16 @@
         <main class="admin__main">
           <h2>Dashboard</h2>
           <div class="dashboard">
-            <div class="dashboard__item">
+            <div class="dashboard__item dashboard__item--full">
               <div class="card">
                 <strong>0</strong> Members Online
               </div>
             </div>
-            <div class="dashboard__item">
+            <div class="dashboard__item dashboard__item--full">
               <div class="card">
-                <strong>0</strong> Guilds
+                <strong>Now Playing:</strong>
+                <input type="text" name="np" id="np" placeholder="loading...">
+                <button id="setnp">Save</button>
               </div>
             </div>
             <div class="dashboard__item dashboard__item--full">
@@ -60,13 +62,13 @@
                 <p>Loading...</p>
               </div>
             </div>
-            <div class="dashboard__item dashboard__item--col">
+            <div class="dashboard__item dashboard__item--full">
               <div class="card">Loading...</div>
             </div>
-            <div class="dashboard__item dashboard__item--col">
+            <div class="dashboard__item dashboard__item--full">
               <div class="card">Loading...</div>
             </div>
-            <div class="dashboard__item dashboard__item--col">
+            <div class="dashboard__item dashboard__item--full">
               <div class="card">Loading...</div>
             </div>
           </div>
