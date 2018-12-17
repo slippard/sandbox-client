@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "del": "^3.0.0",
+    "discord.js": "^11.4.2",
     "electron": "^2.0.2",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
