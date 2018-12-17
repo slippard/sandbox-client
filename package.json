@@ -1,0 +1,43 @@
+{
+  "name": "sandbox-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slippard/sandbox-client.git"
+  },
+  "author": "Koubi",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "electron": "^2.0.2",
+    "gulp": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-typescript": "^5.0.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.0",
+    "run-sequence": "^2.2.1",
+    "socket.io": "^2.2.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.3.5",
+    "@types/socket.io": "^2.1.2",
+    "install": "^0.12.2",
+    "moment": "^2.22.2",
+    "node-notifier": "^5.3.0",
+    "npm": "^6.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/slippard/sandbox-client/issues"
+  },
+  "homepage": "https://github.com/slippard/sandbox-client#readme"
+}
