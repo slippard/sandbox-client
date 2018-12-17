@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/dash.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="admin">
+        <header class="admin__header">
+          <a href="#" class="logo">
+            <h1>Loading...</h1>
+          </a>
+          <div class="toolbar">
+            <button class="btn btn--primary">Connection Status</button>
+            <a href="#" class="logout">
+              Log Out
+            </a>
+          </div>
+        </header>
+        <nav class="admin__nav">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Dashboard</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Guilds</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Members</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Bot Stats</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Settings</a>
+            </li>
+          </ul>
+        </nav>
+        <main class="admin__main">
+          <h2>Dashboard</h2>
+          <div class="dashboard">
+            <div class="dashboard__item">
+              <div class="card">
+                <strong>0</strong> Members Online
+              </div>
+            </div>
+            <div class="dashboard__item">
+              <div class="card">
+                <strong>0</strong> Guilds
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--full">
+              <div class="card">
+                <p>Loading...</p>
+              </div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">Loading...</div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">Loading...</div>
+            </div>
+            <div class="dashboard__item dashboard__item--col">
+              <div class="card">Loading...</div>
+            </div>
+          </div>
+        </main>
+        <footer class="admin__footer">
+          <ul class="ticker">
+            <li class="ticker__item">Online: 0</li>
+            <li class="ticker__item">Idle: 0</li>
+            <li class="ticker__item">DND: 0</li>
+            <li class="ticker__item">Offline: 0</li>
+          </ul>
+        </footer>
+      </div>
+</body>
+<script>
+    require('./dist/dashboard.js');
+</script>
+
+</html>

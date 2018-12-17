@@ -4,14 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/login.css">
   <title>Login</title>
 </head>
 
 <body>
-  <div class="status"></div>
+  <div class="status">
+    <span class="tooltip">Connecting...</span>
+  </div>
+  <h2 class="warning">Error</h2>
+
  <h2 class="title">Login</h2>
   <input id="username" class="username" type="text" placeholder="Discord ID">
-  <button id="getuser">Submit</button>
+  <button id="getuser">Connect</button>
 </body>
 
 <script>
